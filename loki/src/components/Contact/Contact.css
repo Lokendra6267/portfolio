@@ -1,0 +1,206 @@
+/* General Section Styling */
+.contact-section {
+  padding: 60px 20px;
+  background-color: #0f172a;
+  color: #fff;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  color: #00bcd4;
+}
+
+/* Contact Container */
+.contact-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+  align-items: center;
+}
+
+/* Contact Form */
+.contact-form-container {
+  flex: 1;
+}
+
+.contact-form {
+  background-color: #1e293b;
+  padding: 30px;
+  border-radius: 8px;
+  width: 100%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.form-group {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.form-group label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 8px;
+  color: #fff;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #334155;
+  border-radius: 5px;
+  background: #1e293b;
+  color: #fff;
+  font-size: 1rem;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+  color: #94a3b8;
+}
+
+.submit-btn {
+  width: 100%;
+  padding: 12px;
+  font-size: 1rem;
+  font-weight: bold;
+  background-color: #00bcd4;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+  background-color: #008c9e;
+}
+
+/* Contact Info Section */
+.contact-info-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-image {
+  width: 100%;
+  max-width: 300px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+}
+
+/* Info Cards */
+.info-cards {
+  width: 100%;
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.info-card {
+  background-color: #1e293b;
+  padding: 20px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.info-card i {
+  font-size: 1.8rem;
+  color: #00bcd4;
+}
+
+.info-content h4 {
+  margin: 0;
+  font-size: 1.2rem;
+  color: #00bcd4;
+}
+
+.info-content p {
+  margin: 5px 0 0;
+  color: #fff;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .contact-container {
+    gap: 20px;
+  }
+
+  .contact-form-container {
+    flex: 1 1 60%;
+  }
+
+  .contact-info-container {
+    flex: 1 1 40%;
+  }
+
+  .contact-image {
+    max-width: 250px;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact-container {
+    flex-direction: column;
+  }
+
+  .contact-info-container {
+    text-align: center;
+  }
+
+  .contact-form {
+    padding: 20px;
+  }
+
+  .contact-image {
+    max-width: 200px;
+  }
+}
+
+@media (max-width: 480px) {
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .form-group label {
+    font-size: 0.9rem;
+  }
+
+  .form-group input,
+  .form-group textarea {
+    padding: 8px;
+    font-size: 0.9rem;
+  }
+
+  .submit-btn {
+    padding: 10px;
+    font-size: 0.9rem;
+  }
+
+  .info-card {
+    padding: 15px;
+    gap: 10px;
+  }
+
+  .info-card i {
+    font-size: 1.5rem;
+  }
+
+  .info-content h4 {
+    font-size: 1rem;
+  }
+
+  .info-content p {
+    font-size: 0.9rem;
+  }
+}

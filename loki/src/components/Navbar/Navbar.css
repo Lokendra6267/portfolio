@@ -1,0 +1,104 @@
+/* Navbar Container */
+.navbar {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  .navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* Logo */
+  .navbar-logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  /* Links */
+  .navbar-links {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .navbar-link {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+  }
+  
+  .navbar-link:hover {
+    color: #00bcd4;
+  }
+  
+  /* Hamburger Toggle for Mobile */
+  .navbar-toggle {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    outline: none;
+  }
+  
+  .navbar-hamburger {
+    width: 25px;
+    height: 2px;
+    background-color: #fff;
+    display: block;
+    position: relative;
+  }
+  
+  .navbar-hamburger::before,
+  .navbar-hamburger::after {
+    content: "";
+    width: 25px;
+    height: 2px;
+    background-color: #fff;
+    display: block;
+    position: absolute;
+    left: 0;
+    transition: all 0.3s ease;
+  }
+  
+  .navbar-hamburger::before {
+    top: -8px;
+  }
+  
+  .navbar-hamburger::after {
+    top: 8px;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .navbar-toggle {
+      display: block;
+    }
+  
+    .navbar-links {
+      display: none;
+      flex-direction: column;
+      background-color: #333;
+      position: absolute;
+      top: 60px;
+      right: 20px;
+      padding: 10px;
+      border-radius: 5px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    }
+  
+    .navbar-links.active {
+      display: flex;
+    }
+  }
+  

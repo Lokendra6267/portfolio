@@ -1,0 +1,125 @@
+/* General Section Styling */
+.skills-section {
+  padding: 60px 20px;
+  background-color: #0f172a;
+  color: #fff;
+  text-align: center;
+  animation: fadeIn 1s ease-out 0.5s forwards;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  color: #00bcd4;
+  opacity: 0;
+  animation: fadeIn 1s ease-out 0.5s forwards;
+}
+
+/* Skills Container */
+.skills-container {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  align-items: center;
+  opacity: 0;
+  animation: fadeIn 1s ease-out 1s forwards;
+}
+
+/* Skill Categories */
+.skills-category {
+  width: 80%;
+  max-width: 1000px;
+  text-align: left;
+}
+
+.skills-category-title {
+  font-size: 2rem;
+  color: #00bcd4;
+  margin-bottom: 20px;
+}
+
+/* Updated Skills List for Two Columns */
+.skills-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Two columns */
+  column-gap: 50px; /* Space between columns */
+  row-gap: 20px; /* Space between rows */
+  justify-items: center;
+  margin-top: 20px;
+}
+
+.skill-item {
+  background-color: #1e293b;
+  border-radius: 8px;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transform: translateY(20px);
+  opacity: 0;
+  animation: slideUp 0.6s ease-out forwards;
+  width: 100%; /* Ensures the item takes full width in each grid cell */
+}
+
+.skill-name {
+  font-size: 1.2rem;
+  color: #94a3b8;
+}
+
+.skill-progress {
+  background-color: #334155;
+  border-radius: 5px;
+  width: 70%;
+  height: 10px;
+}
+
+.skill-progress-bar {
+  background-color: #00bcd4;
+  height: 100%;
+  border-radius: 5px;
+}
+
+.skill-level {
+  font-size: 1.1rem;
+  color: #94a3b8;
+}
+
+/* Hover Effect for Skill Item */
+.skill-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+  transition: all 0.3s ease-in-out;
+}
+
+/* Keyframe Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .skills-list {
+    grid-template-columns: 1fr; /* Stacks items vertically on small screens */
+  }
+
+  .skill-item {
+    width: 100%;
+  }
+}

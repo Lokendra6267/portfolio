@@ -1,0 +1,123 @@
+/* General Styling */
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  color: #fff;
+  background: #0f172a;
+}
+
+.home-section {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding: 20px;
+  overflow: hidden;
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;  /* Space between text and image */
+  align-items: center;
+  width: 100%;
+}
+
+.text-container {
+  text-align: left;
+  max-width: 50%;  /* Limits the width of text */
+}
+
+.greeting {
+  font-size: 3rem;
+  margin: 0;
+}
+
+.name-highlight {
+  color: #00bcd4;
+  font-weight: bold;
+}
+
+.profession {
+  font-size: 1.5rem;
+  margin-top: 10px;
+}
+
+.profession-highlight {
+  color: #ff6f61;
+}
+
+.about {
+  margin: 20px 0;
+  font-size: 1.2rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.6;
+}
+
+.cta-buttons {
+  margin-top: 20px;
+  display: flex;
+  gap: 15px;
+  justify-content: flex-start;
+}
+
+.cta-btn {
+  text-decoration: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.cta-btn.primary {
+  background-color: #00bcd4;
+  color: #fff;
+}
+
+.cta-btn.primary:hover {
+  background-color: #008c9e;
+}
+
+.cta-btn.secondary {
+  background-color: #ff6f61;
+  color: #fff;
+}
+
+.cta-btn.secondary:hover {
+  background-color: #e5534b;
+}
+
+/* Image Styling */
+.image-container {
+  max-width: 40%;  /* Adjust width for the image */
+  display: flex;
+  justify-content: center;
+}
+
+.profile-image {
+  width: 100%;
+  border-radius: 10px;
+  object-fit: cover; /* Ensures the image covers the container */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .content {
+    flex-direction: column; /* Stack text and image on small screens */
+    text-align: center;
+  }
+
+  .text-container {
+    max-width: 100%;  /* Allow text to take full width on small screens */
+    margin-bottom: 20px;
+  }
+
+  .profile-image {
+    width: 70%;  /* Make the image smaller on mobile */
+    margin-top: 20px;
+  }
+}

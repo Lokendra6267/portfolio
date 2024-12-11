@@ -1,0 +1,145 @@
+/* General Section Styling */
+.ftco-section {
+    padding: 80px 0;
+    background-color: #0f172a;
+  }
+  
+  .ftco-counter {
+    position: relative;
+    background-color: #0f172a;
+    padding: 50px 0;
+  }
+  
+  /* Flexbox for row layout */
+  .row.d-md-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px; /* Adds space between items */
+  }
+  
+  .counter-wrap {
+    margin-bottom: 0; /* Remove margin-bottom to align all items horizontally */
+  }
+  
+  .block-18 {
+    text-align: center;
+    padding: 40px;
+    background-color: #e4e2e2;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .block-18 .text {
+    font-size: 1.5rem;
+  }
+  
+  .number {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #00bcd4;
+  }
+  
+  span {
+    display: block;
+    margin-top: 10px;
+    font-size: 1.1rem;
+    color: #333;
+  }
+  
+  /* Styling for the 'More Projects' Section */
+  .ftco-hireme {
+    padding: 80px 0;
+    color: #fff;
+    text-align: center;
+  }
+  
+  .ftco-hireme h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .ftco-hireme h2 span {
+    color: #ff6f61;
+  }
+  
+  .heading h4 {
+    font-size: 1.5rem;
+    margin: 20px 0;
+    font-weight: normal;
+  }
+  
+  .btn-primary {
+    background-color: #ff6f61;
+    border-color: #ff6f61;
+    font-size: 1.1rem;
+    padding: 15px 30px;
+    border-radius: 5px;
+    text-decoration: none;
+  }
+  
+  .btn-primary:hover {
+    background-color: #e5534b;
+    border-color: #e5534b;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .ftco-section {
+      padding: 60px 0;
+    }
+  
+    .ftco-counter .block-18 {
+      padding: 20px;
+      margin-bottom: 20px; /* Add spacing for stacked layout */
+    }
+  
+    .number {
+      font-size: 2.5rem;
+    }
+  
+    .ftco-hireme h2 {
+      font-size: 2rem;
+    }
+  
+    .heading h4 {
+      font-size: 1.2rem;
+    }
+  
+    .btn-primary {
+      padding: 12px 20px;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .ftco-section {
+      padding: 40px 0;
+    }
+  
+    .row.d-md-flex {
+      flex-direction: column; /* Stack items vertically */
+      gap: 20px; /* Reduce spacing between items */
+    }
+  
+    .ftco-counter .block-18 {
+      padding: 15px;
+    }
+  
+    .number {
+      font-size: 2rem;
+    }
+  
+    .ftco-hireme h2 {
+      font-size: 1.8rem;
+    }
+  
+    .heading h4 {
+      font-size: 1rem;
+    }
+  
+    .btn-primary {
+      font-size: 1rem;
+      padding: 10px 18px;
+    }
+  }
+  
